@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="theme-color" content="#0d1117" />
+  <title>Investment Research | Imperalith Fund</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('boardroom-bg.jpg') no-repeat center center fixed;
+      background-size: cover;
+    }
+
+    .overlay {
+      background-color: rgba(0, 0, 0, 0.7);
+      min-height: 100vh;
+      padding-top: 100px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: #fff;
+    }
+
+    .research-container {
+      background-color: rgba(25, 25, 25, 0.45);
+      padding: 40px;
+      border-radius: 10px;
+      max-width: 800px;
+      width: 90%;
+      text-align: center;
+    }
+
+    .research-container h1 {
+      color: #FFD700;
+      margin-bottom: 20px;
+    }
+
+    .research-container p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: #ccc;
+    }
+
+    .research-container a.button {
+      display: inline-block;
+      margin-top: 20px;
+      padding: 12px 24px;
+      background-color: #FFD700;
+      color: #000;
+      text-decoration: none;
+      font-weight: bold;
+      border-radius: 5px;
+    }
+
+    footer {
+      margin-top: auto;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+      font-size: 0.9rem;
+    }
+
+    .navbar {
+      position: fixed;
+      width: 100%;
+      top: 0;
+      left: 0;
+      padding: 20px 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background-color: rgba(13, 17, 23, 0.95);
+      z-index: 999;
+    }
+
+    .logo {
+      color: #FFD700;
+      font-size: 1.5rem;
+      font-weight: bold;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 30px;
+      list-style: none;
+    }
+
+    .nav-links a {
+      color: white;
+      text-decoration: none;
+      font-size: 1rem;
+    }
+
+    .nav-links a:hover {
+      border-bottom: 2px solid #FFD700;
+    }
+
+    .hamburger {
+      display: none;
+      background: none;
+      border: 2px solid #FFD700;
+      color: #FFD700;
+      font-size: 1.5rem;
+      padding: 5px 10px;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+
+    @media (max-width: 768px) {
+      .nav-links {
+        display: none;
+        flex-direction: column;
+        gap: 20px;
+        position: absolute;
+        top: 75px;
+        right: 20px;
+        background: #1a1f26;
+        padding: 20px;
+        border-radius: 10px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        z-index: 1000;
+      }
+
+      .nav-links.open {
+        display: flex;
+      }
+
+      .hamburger {
+        display: block;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/" onclick="location.href='/'" style="text-decoration: none; color: #FFD700;">
+          The Imperalith Fund
+        </a>
+      </div>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="investment-research.html">Research</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="founder.html">Founder</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Content -->
+  <div class="overlay">
+    <div class="research-container">
+      <h1>Investment Research</h1>
+      <p>
+        We publish independent equity research on selected public companies. <br />
+        Reports are grounded in bottom-up fundamental analysis and long-term intrinsic value assessments.<br /><br />
+        Our process integrates macroeconomic trends and strategic sector insights to develop a robust understanding of potential investments.<br /><br />
+        To access full reports, please <a href="mailto:zhuangjosh05@gmail.com" style="color: #FFD700;">contact us via email</a>.
+      </p>
+      <a href="ImperalithNVDASample.pdf" class="button" download>Download Sample Report</a>
+      <br />
+      <a href="index.html" style="display: block; margin-top: 20px; color: #FFD700;">← Return to Home</a>
+    </div>
+    <footer>© 2025 Imperalith Capital Management. All rights reserved.</footer>
+  </div>
+
+  <!-- Hamburger Script -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+</body>
+</html>

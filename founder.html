@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Founder | The Imperalith Fund</title>
+  <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/png" href="favicon.png"/>
+
+  <!-- Rich Results Structured Data for Person -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Person",
+    "name": "Josh Zhuang",
+    "url": "https://imperalith.github.io/founder",
+    "image": "https://imperalith.github.io/suitformal.jpg",
+    "jobTitle": "Founder & Portfolio Manager",
+    "worksFor": {
+      "@type": "Organization",
+      "name": "Imperalith Capital Management",
+      "url": "https://imperalith.github.io"
+    },
+    "sameAs": [
+      "https://www.linkedin.com/in/josh-zhuang/"
+    ],
+    "description": "Josh Zhuang is the founder and portfolio manager of Imperalith Capital Management, a solo-managed equity research fund focused on deep value, macro strategy, and asymmetric upside."
+  }
+  </script>
+
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+    }
+    main {
+      flex: 1;
+    }
+    .return-home {
+      margin-top: 50px;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- ╔═══════════ NAVBAR ═══════════╗ -->
+  <nav class="navbar">
+    <div class="logo">
+      <a href="/" onclick="location.href='/'" style="text-decoration: none; color: #FFD700;">
+        The Imperalith Fund
+      </a>
+    </div>
+    <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="investment-research.html">Research</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a href="founder.html">Founder</a></li>
+    </ul>
+  </nav>
+  <!-- ╚══════════════════════════════╝ -->
+
+  <main>
+    <!-- ╔════════ ABOUT SECTION ═════════╗ -->
+    <section id="about" class="about">
+      <div class="about-text">
+        <h2>About Josh Zhuang</h2>
+        <p>
+          I’m the founder and portfolio manager of <strong>The Imperalith Fund</strong>. My investment approach blends bottom-up value analysis with a global macro lens to uncover overlooked opportunities across public markets.
+        </p>
+        <p style="margin-top: 20px;">
+          At Imperalith, we focus on asymmetric risk-reward setups—particularly in sectors or narratives that others misprice or ignore. Our edge comes from identifying companies with durable economics, pricing power, and scalable business models. Each position is built through independent research, macroeconomic insight, and a contrarian mindset.
+        </p>
+        <p style="margin-top: 20px;">
+          Our investment theses are often built around misunderstood narratives and long-term structural mispricings. Whether it’s tech, industrials, or special situations, we seek to deploy patient capital into opportunities others overlook.
+        </p>
+
+        <p style="margin-top: 30px;">
+          <strong>Connect with me:</strong> 
+          <a href="https://www.linkedin.com/in/josh-zhuang/" target="_blank" style="color: #fdd835; text-decoration: none;">
+            Josh Zhuang on LinkedIn
+          </a>
+        </p>
+
+        <p style="font-size: 1px; color: #0f1115; position: absolute; left: -9999px;">
+          <a href="index.html">Home</a> |
+          <a href="portfolio.html">Portfolio</a> |
+          <a href="investment-research.html">Research</a> |
+          <a href="contact.html">Contact</a>
+        </p>
+
+        <div class="return-home">
+          <a href="index.html" style="color: #fdd835;">← Return to Home</a>
+        </div>
+      </div>
+
+      <div class="about-photos">
+        <figure class="about-img">
+          <img src="suitformal.jpg" alt="Formal portrait of Josh Zhuang" />
+        </figure>
+        <figure class="about-img">
+          <img src="casualfinal.jpg" alt="Josh Zhuang on Shanghai’s Bund riverfront" />
+        </figure>
+      </div>
+    </section>
+    <!-- ╚════════════════════════════════╝ -->
+  </main>
+
+<footer class="site-footer">
+  <p>&copy; 2025 Imperalith Capital Management. All rights reserved.</p>
+</footer>
+
+  <script>
+    const burger = document.getElementById('hamburger');
+    const nav    = document.getElementById('navLinks');
+    burger.addEventListener('click', () => {
+      nav.classList.toggle('open');
+      burger.classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

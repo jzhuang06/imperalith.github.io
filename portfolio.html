@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="description" content="See the active portfolio of Imperalith Capital — a value-driven equity research fund led by Josh Zhuang."/>
+  <meta name="theme-color" content="#0f1115" />
+  <title>Portfolio | Imperalith Capital</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="favicon.png" />
+  <style>
+    html, body {
+      background-color: #0f1115; /* match your dark theme */
+    }
+  </style>
+</head>
+<body class="portfolio-page">
+
+  <!-- NAVBAR -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">
+        <a href="/" onclick="location.href='/'" style="text-decoration: none; color: #FFD700;">
+          The Imperalith Fund
+        </a>
+      </div>
+      
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu">&#9776;</button>
+      
+      <ul class="nav-links" id="navLinks">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="investment-research.html">Research</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="founder.html">Founder</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="overlay">
+    <!-- PORTFOLIO SECTION -->
+    <main>
+      <section class="portfolio-content">
+        <h2>Portfolio Overview</h2>
+        <p>
+          The Imperalith Fund holds a concentrated portfolio of high-conviction equity positions
+          grounded in fundamental analysis and long-term value discipline. We prioritize businesses
+          with sustainable competitive advantages, strong cash flow generation, and compelling
+          risk-adjusted return profiles.<br><br>
+        </p>
+        <ul>
+          <li><strong>NVIDIA (NVDA):</strong> Flagship position in AI infrastructure and chip design</li>
+          <li><strong>Apple (AAPL):</strong> Core holding driven by brand, ecosystem, and capital efficiency</li>
+          <li><strong>Alphabet (GOOGL):</strong> Long-term compounder with asymmetric optionality</li>
+        </ul>
+
+        <br>
+
+        <p style="font-size: 1px; color: #0f1115;">
+          Josh Zhuang manages this portfolio at Imperalith Capital Management.
+          Learn more on our <a href="founder.html" style="color: #0f1115;">founder page</a>.
+        </p>
+
+        <p style="text-align: center; margin-top: 20px;">
+          <a href="investment-research.html" style="color: #0f1115; font-size: 1px; position: absolute; left: -9999px;">→ View Investment Research</a>
+        </p>
+
+        <div style="text-align: center;">
+          <a href="index.html" style="color: #fdd835;">← Return to Home</a>
+        </div>
+      </section>
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="site-footer">
+      <p>&copy; 2025 Imperalith Capital Management. All rights reserved.</p>
+    </footer>
+  </div>
+
+  <!-- Hamburger Script -->
+  <script>
+    const hamburger = document.getElementById("hamburger");
+    const navLinks = document.getElementById("navLinks");
+
+    hamburger.addEventListener("click", () => {
+      navLinks.classList.toggle("open");
+    });
+  </script>
+
+    <!-- Hidden SEO link for portfolio -->
+  <p style="font-size: 1px; color: #0f1115; position: absolute; left: -9999px;">
+    <a href="portfolio.html" style="color: #0f1115;">View Portfolio</a>
+  </p>
+</body>
+</html>
